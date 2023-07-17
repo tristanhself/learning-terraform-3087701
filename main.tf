@@ -23,7 +23,7 @@ resource "aws_instance" "blog" {
   instance_type = var.instance_type
   subnet_id     = "subnet-064e2b77d370a4093"
 
-  vpc_security_group_ids = ["aws_security_group.blog.id"]
+  vpc_security_group_ids = [aws_security_group.blog.id]
 
   tags = {
     Name = "HelloWorld"
