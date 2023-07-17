@@ -30,6 +30,7 @@ resource "aws_instance" "blog" {
   }
 }
 
+/*
 resource "aws_security_group" "blog" {
   name        = "blog"
   description = "Allow HTTP and HTTPS in, allow everything out"
@@ -45,7 +46,6 @@ resource "aws_security_group_rule" "blog_http_in" {
   security_group_id = "aws_security_group.blog.id"
 }
 
-/*
 resource "aws_security_group_rule" "blog_https_in" {
   type              = "ingress"
   from_port         = 443
