@@ -42,7 +42,7 @@ resource "aws_instance" "blog" {
     Name = "HelloWorld"
   }
 }
-
+/*
 module "blog_sg" {
   source  = "terraform-aws-modules/security-group/aws"
   version = "5.1.0"
@@ -55,7 +55,7 @@ module "blog_sg" {
   egress_rules       = ["all-all"]
   egress_cidr_blocks = ["0.0.0.0/0"]
 }
-
+*/
 /*
 resource "aws_security_group" "blog" {
   name        = "blog"
